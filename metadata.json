@@ -1,0 +1,6 @@
+{
+  "name": "Bisalpur Hub",
+  "description": "Apne Shehar Ki Shopping, Ek Hi Hub Mein. A premium local marketplace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

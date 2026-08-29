@@ -9,7 +9,6 @@ import com.example.domain.repository.CartRepository
 import com.example.domain.repository.OrderRepository
 import com.example.domain.repository.WishlistRepository
 import com.example.util.SessionManager
-import com.google.firebase.FirebaseApp
 import kotlinx.coroutines.launch
 
 class MyApplication : Application() {
@@ -36,10 +35,8 @@ class MyApplication : Application() {
         private set
 
     override fun onCreate() {
-        super.onCreate()
-        if (FirebaseApp.getApps(this).isEmpty()) {
-            FirebaseApp.initializeApp(this)
-        }
+        super.onCreate() 
+        
         database = Room.databaseBuilder(
             this,
             AppDatabase::class.java,
